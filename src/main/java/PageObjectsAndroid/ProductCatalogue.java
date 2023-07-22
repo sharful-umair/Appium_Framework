@@ -24,12 +24,25 @@ public class ProductCatalogue extends AndroidActions {
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='ADD TO CART']")
     private List<WebElement> addToCart;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='ADDED TO CART']")
+    private List<WebElement> addedToCart;
+
     @AndroidFindBy(id = "com.androidsample.generalstore:id/appbar_btn_cart")
     private WebElement cart;
 
     public void addItemToCartByIndex(int idx)
     {
         addToCart.get(idx).click();
+    }
+
+    public WebElement addToCartButton(int idx)
+    {
+        return addToCart.get(idx);
+    }
+
+    public WebElement addedToCartButton(int idx)
+    {
+        return addedToCart.get(idx);
     }
 
     public CartPage goToCartPage()
