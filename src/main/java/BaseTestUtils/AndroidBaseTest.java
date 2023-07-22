@@ -1,20 +1,16 @@
 package BaseTestUtils;
 
 import PageObjectsAndroid.FormPage;
+import PageObjectsAndroid.ProductCatalogue;
 import Utils.AppiumCommanUtils;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
-import io.appium.java_client.service.local.AppiumServiceBuilder;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
 
@@ -60,5 +56,15 @@ public class AndroidBaseTest extends AppiumCommanUtils {
 
         //Stopping Appium Server
         //service.stop();
+    }
+
+    public ProductCatalogue AndroidLogin(AndroidDriver driver) throws InterruptedException {
+        formPage = new FormPage(driver);
+        formPage.setNameField("Mr Test User");
+        formPage.setGender("Male");
+        formPage.setCountrySelection("Argentina");
+        formPage.submitForm();
+        Thread.sleep(3000);
+        return new ProductCatalogue(driver);
     }
 }
