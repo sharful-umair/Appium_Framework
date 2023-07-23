@@ -35,7 +35,6 @@ public class AlertViewPage extends IOSActions {
     @iOSXCUITFindBy(iOSNsPredicate = "label == 'Confirm'")
     private WebElement confirmButton;
 
-    //driver.findElement(AppiumBy.iOSNsPredicateString("name BEGINSWITH[c] 'A message'")).getText();
     @iOSXCUITFindBy(iOSNsPredicate = "name BEGINSWITH[c] 'A message'")
     private WebElement confirmMessage;
 

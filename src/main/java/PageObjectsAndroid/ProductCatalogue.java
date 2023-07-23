@@ -19,7 +19,6 @@ public class ProductCatalogue extends AndroidActions {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    //river.findElement(AppiumBy.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text='ADD TO CART']")
     private List<WebElement> addToCart;
@@ -29,6 +28,9 @@ public class ProductCatalogue extends AndroidActions {
 
     @AndroidFindBy(id = "com.androidsample.generalstore:id/appbar_btn_cart")
     private WebElement cart;
+
+    @AndroidFindBy(id = "com.androidsample.generalstore:id/counterText")
+    private WebElement addToCartNumber;
 
     public void addItemToCartByIndex(int idx)
     {
@@ -49,6 +51,11 @@ public class ProductCatalogue extends AndroidActions {
     {
         cart.click();
         return new CartPage(driver);
+    }
+
+    public String getNumberAddToCart()
+    {
+        return addToCartNumber.getText();
     }
 
 }

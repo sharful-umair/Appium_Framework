@@ -14,12 +14,6 @@ import java.io.IOException;
 
 public class ECOM_TC_2 extends AndroidBaseTest {
 
-//    @BeforeMethod
-//    public void preSetup()
-//    {
-//        formPage.setActivity();
-//    }
-
     @Test
     public void AddToCartButtonValidation() throws InterruptedException {
         int index = 0;

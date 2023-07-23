@@ -39,9 +39,12 @@ public class ECOM_TC_4 extends AndroidBaseTest {
         ProductCatalogue productCatalogue = formPage.submitForm();
         Thread.sleep(3000);
 
-        //ProductCatalogue productCatalogue = new ProductCatalogue(driver);
         productCatalogue.addItemToCartByIndex(0);
+        String itemOne = productCatalogue.getNumberAddToCart();
+        Assert.assertEquals(itemOne, "1");
         productCatalogue.addItemToCartByIndex(0);
+        String itemTwo = productCatalogue.getNumberAddToCart();
+        Assert.assertEquals(itemTwo, "2");
         CartPage cartpage = productCatalogue.goToCartPage();
         Thread.sleep(3000);
 
