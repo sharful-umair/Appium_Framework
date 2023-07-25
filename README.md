@@ -17,6 +17,9 @@ Appium Hybrid Framework with top design patterns designing and implementing Indu
 8. Andriod Studio
 9. Appium Sever
 10. Appium Inspector
+11. Appium Client Library
+12. Node.js
+13. Git
 
 # Usage
 Explain how users can use your project. Provide examples or code snippets to demonstrate its functionality. <br>
