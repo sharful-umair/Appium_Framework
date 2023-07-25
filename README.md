@@ -45,7 +45,31 @@ NOTE: Make sure devices (Either Emulator/Simulator or Real-Device) are ready
 # Framework Snapshot
 
 Project Structure:
+<br>
 <img width="960" alt="Screenshot 2023-07-24 225827" src="https://github.com/sharful-umair/Appium_Framework/assets/74320548/007b1bf0-2ead-41af-bcad-12285ae0664d">
+<br>
 <img width="960" alt="Screenshot 2023-07-24 230234" src="https://github.com/sharful-umair/Appium_Framework/assets/74320548/da9c5a1b-1db3-44d1-b48f-8d7967116ab4">
+<br>
+<br>
+Page Object <br>
+<img width="689" alt="Page Object" src="https://github.com/sharful-umair/Appium_Framework/assets/74320548/37873145-d644-42bf-9a2e-696fbdf5a8fa">
+<br>
+<br>
+Android Base<br>
+<img width="677" alt="Android Base" src="https://github.com/sharful-umair/Appium_Framework/assets/74320548/824335c7-482d-4199-9d94-9b1d73416d57">
+<br>
+<br>
+IOS Base<br>
+<img width="710" alt="IOS Base" src="https://github.com/sharful-umair/Appium_Framework/assets/74320548/10542bfa-4c24-4ac4-94e9-d3ef52fed63d">
+<br>
+<br>
+Reporter<br>
+<img width="709" alt="Reporter" src="https://github.com/sharful-umair/Appium_Framework/assets/74320548/2f5300b5-e8bd-4dbd-b53b-2814ff578f06">
+<br>
+<br>
+Android ACtions<br>
+<img width="692" alt="Android Action" src="https://github.com/sharful-umair/Appium_Framework/assets/74320548/957c3fd4-a1bf-4f08-9dcf-74b8d40f8dd9">
+
+
 
 
