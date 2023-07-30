@@ -28,7 +28,7 @@ Include any relevant details about the project's usage, such as available comman
 # Features
 List the key features of your project. You can use bullet points for clarity.
 
-- Parellel Execution uisng TestNG
+- Parallel Execution using TestNG
 - Page Object Model Design Pattern
 - Screenshot capture on scenario failure
 - Supports both Android and iOS
